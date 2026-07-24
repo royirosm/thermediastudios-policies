@@ -1,0 +1,141 @@
+<title>TheRMediaStudios</title>
+<style>
+  :root {
+    --paper: #faf9f6;
+    --ink: #1c1b19;
+    --accent: #2e5e56;
+    --accent-soft: #dce8e4;
+    --rule: #dad5cb;
+    --muted: #6e6a62;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #15171a;
+      --ink: #ede9e2;
+      --accent: #74bcae;
+      --accent-soft: #1e2c29;
+      --rule: #2b2e31;
+      --muted: #9c978c;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #15171a;
+    --ink: #ede9e2;
+    --accent: #74bcae;
+    --accent-soft: #1e2c29;
+    --rule: #2b2e31;
+    --muted: #9c978c;
+  }
+  :root[data-theme="light"] {
+    --paper: #faf9f6;
+    --ink: #1c1b19;
+    --accent: #2e5e56;
+    --accent-soft: #dce8e4;
+    --rule: #dad5cb;
+    --muted: #6e6a62;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, "Segoe UI", system-ui, sans-serif;
+    line-height: 1.65;
+    font-size: 16.5px;
+  }
+
+  .page {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 4.5rem 1.5rem 6rem;
+  }
+
+  .eyebrow {
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 600;
+    margin: 0 0 0.9rem;
+  }
+
+  h1 {
+    font-family: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+    font-size: clamp(2rem, 4.5vw, 2.6rem);
+    font-weight: 600;
+    line-height: 1.15;
+    margin: 0 0 1.4rem;
+    text-wrap: balance;
+    letter-spacing: -0.01em;
+  }
+
+  .intro {
+    font-size: 1.05rem;
+    color: var(--ink);
+    margin-bottom: 2.6rem;
+    max-width: 34rem;
+  }
+
+  .intro p + p { margin-top: 0.9rem; }
+
+  .links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding-top: 1.8rem;
+    border-top: 1px solid var(--rule);
+  }
+
+  .links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.65rem 1.1rem;
+    border-radius: 6px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 0.92rem;
+    font-weight: 600;
+  }
+  .links a:hover { text-decoration: underline; }
+
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.8rem;
+    border-top: 1px solid var(--rule);
+    font-size: 0.88rem;
+    color: var(--muted);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+  }
+  footer a { color: var(--accent); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+</style>
+
+<div class="page">
+  <p class="eyebrow">TheRMediaStudios</p>
+  <h1>TheRMediaStudios</h1>
+  <div class="intro">
+    <p>
+      TheRMediaStudios is an independent media studio producing short-form video
+      content across several branded channels.
+    </p>
+    <p>
+      This site hosts the Terms of Service and Privacy Policy for the studio's
+      internal publishing tools, used to prepare and post studio-produced video
+      content to the studio's own accounts on supported platforms.
+    </p>
+  </div>
+  <nav class="links">
+    <a href="./terms/">Terms of Service</a>
+    <a href="./privacy/">Privacy Policy</a>
+  </nav>
+  <footer>
+    <span>TheRMediaStudios</span>
+    <a href="mailto:thermediastudios@gmail.com">thermediastudios@gmail.com</a>
+  </footer>
+</div>

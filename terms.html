@@ -1,0 +1,227 @@
+<title>Terms of Service — TheRMediaStudios</title>
+<style>
+  :root {
+    --paper: #faf9f6;
+    --ink: #1c1b19;
+    --accent: #2e5e56;
+    --accent-soft: #dce8e4;
+    --rule: #dad5cb;
+    --muted: #6e6a62;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #15171a;
+      --ink: #ede9e2;
+      --accent: #74bcae;
+      --accent-soft: #1e2c29;
+      --rule: #2b2e31;
+      --muted: #9c978c;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #15171a;
+    --ink: #ede9e2;
+    --accent: #74bcae;
+    --accent-soft: #1e2c29;
+    --rule: #2b2e31;
+    --muted: #9c978c;
+  }
+  :root[data-theme="light"] {
+    --paper: #faf9f6;
+    --ink: #1c1b19;
+    --accent: #2e5e56;
+    --accent-soft: #dce8e4;
+    --rule: #dad5cb;
+    --muted: #6e6a62;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, "Segoe UI", system-ui, sans-serif;
+    line-height: 1.65;
+    font-size: 16.5px;
+  }
+
+  .page {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 4.5rem 1.5rem 6rem;
+  }
+
+  .eyebrow {
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 600;
+    margin: 0 0 0.9rem;
+  }
+
+  h1 {
+    font-family: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+    font-size: clamp(2rem, 4.5vw, 2.6rem);
+    font-weight: 600;
+    line-height: 1.15;
+    margin: 0 0 1.4rem;
+    text-wrap: balance;
+    letter-spacing: -0.01em;
+  }
+
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1.6rem;
+    font-size: 0.88rem;
+    color: var(--muted);
+    padding-bottom: 1.8rem;
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: 2.6rem;
+    font-variant-numeric: tabular-nums;
+  }
+  .meta strong { color: var(--ink); font-weight: 600; }
+
+  .intro {
+    font-size: 1.05rem;
+    color: var(--ink);
+    margin-bottom: 2.6rem;
+    max-width: 34rem;
+  }
+
+  section { margin-bottom: 2.3rem; }
+
+  .section-head {
+    display: flex;
+    align-items: baseline;
+    gap: 0.7rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .section-num {
+    font-family: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+    font-size: 1rem;
+    color: var(--accent);
+    font-weight: 600;
+    min-width: 1.6rem;
+  }
+
+  h2 {
+    font-family: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+    font-size: 1.22rem;
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: -0.005em;
+  }
+
+  section p, section li { color: var(--ink); max-width: 38rem; }
+  section p + p { margin-top: 0.9rem; }
+
+  ul { margin: 0.6rem 0 0; padding-left: 1.3rem; }
+  li { margin-bottom: 0.45rem; }
+  li::marker { color: var(--accent); }
+
+  .callout {
+    background: var(--accent-soft);
+    border-radius: 6px;
+    padding: 1rem 1.2rem;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    max-width: 38rem;
+  }
+
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.8rem;
+    border-top: 1px solid var(--rule);
+    font-size: 0.88rem;
+    color: var(--muted);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+  }
+  footer a { color: var(--accent); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+
+  a { color: var(--accent); }
+</style>
+
+<div class="page">
+  <p class="eyebrow">TheRMediaStudios · Terms of Service</p>
+  <h1>Terms of Service</h1>
+  <div class="meta">
+    <span><strong>Effective</strong> July 24, 2026</span>
+    <span><strong>Contact</strong> <a href="mailto:thermediastudios@gmail.com">thermediastudios@gmail.com</a></span>
+  </div>
+
+  <p class="intro">
+    These terms govern the internal video publishing tool operated by TheRMediaStudios
+    ("the tool"), used to prepare and post short-form video content to social platforms,
+    including TikTok, on behalf of the studio's own content brands.
+  </p>
+
+  <section>
+    <div class="section-head"><span class="section-num">1</span><h2>Scope</h2></div>
+    <p>
+      The tool is built, operated, and used exclusively by TheRMediaStudios. It is not
+      offered as a public service, and no external party is granted an account or access
+      to it. Every social account it connects to is owned by TheRMediaStudios or one of
+      its own content brands.
+    </p>
+  </section>
+
+  <section>
+    <div class="section-head"><span class="section-num">2</span><h2>What the tool does</h2></div>
+    <ul>
+      <li>Generates and stages short-form video content produced by the studio.</li>
+      <li>Connects to studio-owned accounts on supported platforms via each platform's official API.</li>
+      <li>Publishes that content to the connected accounts, on the studio's direction.</li>
+      <li>Retrieves basic post-performance data where the platform's API makes it available.</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="section-head"><span class="section-num">3</span><h2>Acceptable use</h2></div>
+    <p>
+      The tool is used only to publish content that TheRMediaStudios has produced or has
+      rights to distribute, and only to accounts the studio owns or directly controls. It
+      is not used to automate engagement (likes, follows, comments on other creators'
+      content), to access accounts without authorization, or to circumvent any platform's
+      posting limits or content policies.
+    </p>
+  </section>
+
+  <section>
+    <div class="section-head"><span class="section-num">4</span><h2>Platform terms</h2></div>
+    <p>
+      Use of the tool to connect to TikTok is additionally governed by TikTok's own
+      Developer Terms of Service and Community Guidelines. Where this document and a
+      platform's terms conflict for actions taken on that platform, the platform's terms
+      control.
+    </p>
+  </section>
+
+  <section>
+    <div class="section-head"><span class="section-num">5</span><h2>No warranty</h2></div>
+    <p>
+      The tool is provided as-is, for the studio's own internal use, without warranty of
+      any kind. TheRMediaStudios is responsible for the content it publishes through the
+      tool.
+    </p>
+  </section>
+
+  <section>
+    <div class="section-head"><span class="section-num">6</span><h2>Changes</h2></div>
+    <p>
+      These terms may be updated as the tool's functionality changes. The effective date
+      above reflects the most recent revision.
+    </p>
+  </section>
+
+  <footer>
+    <span>TheRMediaStudios</span>
+    <a href="mailto:thermediastudios@gmail.com">thermediastudios@gmail.com</a>
+  </footer>
+</div>
